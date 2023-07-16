@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+<!--    <item android:drawable="@drawable/listening1" android:duration="150" />-->
+<!--    <item android:drawable="@drawable/listening2" android:duration="150" />-->
+<!--    <item android:drawable="@drawable/listening3" android:duration="150" />-->
+<!--    <item android:drawable="@drawable/listening4" android:duration="150" />-->
+<!--    <item android:drawable="@drawable/listening5" android:duration="150" />-->
+<!--    <item android:drawable="@drawable/listening6" android:duration="150" />-->
+<!--    <item android:drawable="@drawable/listening7" android:duration="150" />-->
+<!--    <item android:drawable="@drawable/listening8" android:duration="150" />-->
+<!--    <item android:drawable="@drawable/listening9" android:duration="250" />-->
+    <item android:drawable="@drawable/mic1" android:duration="150" />
+    <item android:drawable="@drawable/mic2" android:duration="150" />
+    <item android:drawable="@drawable/mic3" android:duration="150" />
+    <item android:drawable="@drawable/mic4" android:duration="250" />
+</animation-list>

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_menu_popup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7d000000"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/popup_window_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/close_window_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|start"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/red_dark"
+                android:backgroundTintMode="src_over"
+                android:clickable="true"
+                android:src="@drawable/close_window_icon"
+                app:borderWidth="0dp"
+                app:fabCustomSize="50dp"
+                app:maxImageSize="40dp"
+                app:tint="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@color/red_dark">
+            <Switch
+                android:id="@+id/visionImpairedModeChange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/red_dark"
+                android:fontFamily="sans-serif-medium"
+                android:switchPadding="30dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Vision Impaired Mode"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:thumb="@drawable/switch_thumb_selector"
+                android:trackTint="@drawable/switch_selector"
+                android:switchMinWidth="130dp"
+                android:checked="false"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+            </LinearLayout>
+            <!--        <Button-->
+            <!--            android:id="@+id/visionImpairedModeChange"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_gravity="center_horizontal"-->
+            <!--            android:layout_margin="5dp"-->
+            <!--            android:layout_weight="1"-->
+            <!--            android:backgroundTint="@color/red_dark"-->
+            <!--            android:fontFamily="sans-serif-medium"-->
+            <!--            android:gravity="center"-->
+            <!--            android:text="turn off vision-impaired mode"-->
+            <!--            android:textSize="28dp"-->
+            <!--            />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:background="@color/red_dark"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:orientation="vertical"
+
+                >
+
+                <TextView
+                    android:id="@+id/header_radioButtons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="Font Size"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
+
+                <RadioGroup
+                    android:id="@+id/fontSizeGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="5dp"
+
+                    android:layout_weight="1"
+                    android:background="@color/red_dark"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/fontSize_S"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="S"
+                        android:buttonTint="@color/white"
+                        android:textColor="@color/white"
+                        android:textSize="30sp" />
+
+                    <RadioButton
+                        android:id="@+id/fontSize_M"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="M"
+                        android:buttonTint="@color/white"
+                        android:textColor="@color/white"
+                        android:textSize="30sp" />
+
+                    <RadioButton
+                        android:id="@+id/fontSize_L"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="L"
+                        android:buttonTint="@color/white"
+                        android:textColor="@color/white"
+                        android:textSize="30sp" />
+
+                    <RadioButton
+                        android:id="@+id/fontSize_XL"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="XL"
+                        android:buttonTint="@color/white"
+                        android:textColor="@color/white"
+                        android:textSize="30sp" />
+
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/tutorialVideo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/red_dark"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="Watch Tutorial Video"
+                android:textAllCaps="false"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:id = "@+id/keyWordLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:background="@color/red_dark"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:orientation="vertical"
+
+                >
+
+                <TextView
+                    android:id="@+id/keyWordsTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="Keywords"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/to_wake_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/red_dark"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Call out ''Chef Remy'' to get Chef Remy's attention. A microphone animation will appear as long as Chef Remy is listening to you. Communicate with him using the following keywords:"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+<!--                <TextView-->
+<!--                    android:id="@+id/switch_between_app_pages_title"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:layout_marginStart="10dp"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:layout_marginEnd="10dp"-->
+<!--                    android:background="@color/red_dark"-->
+<!--                    android:fontFamily="sans-serif-medium"-->
+<!--                    android:text="To switch between app pages (vision-impaired mode on):"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="25sp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/switch_between_app_pages"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:layout_marginStart="10dp"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_marginEnd="10dp"-->
+<!--                    android:background="@color/red_dark"-->
+<!--                    android:fontFamily="sans-serif-medium"-->
+<!--                    android:text="\u25E6 next/previous page"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="25sp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/in_recipe_making_title"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:layout_marginStart="10dp"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:layout_marginEnd="10dp"-->
+<!--                    android:background="@color/red_dark"-->
+<!--                    android:fontFamily="sans-serif-medium"-->
+<!--                    android:text="For use while preparing the recipe:"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="25sp" />-->
+
+                <TextView
+                    android:id="@+id/keyWordsTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/red_dark"
+                    android:fontFamily="sans-serif-medium"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"></View>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EnterRecipeLink">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Remy_Menu_roundCardView"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_gravity="top|left"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="48dp">
+
+            <ImageButton
+                android:id="@+id/Remy_Menu_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/remy" />
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/animation"
+            android:layout_width="200dp"
+            android:layout_height="85dp"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_margin="10dp"
+            android:src="@drawable/listening_animation" />
+
+        <LinearLayout
+            android:id="@+id/layout_show_check_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/enterRecipeLinkTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center_horizontal"
+
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="bottom|center_horizontal"
+                android:text="@string/enter_recipe_title"
+                android:textColor="@color/black"
+                android:textSize="55sp"
+                android:textStyle="bold" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/enterRecipeLinkInputText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:backgroundTint="@color/red_dark"
+                        android:ems="10"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="bottom|center"
+                        android:hint="@string/hint_link"
+                        android:inputType="textMultiLine"
+                        android:lines="4"
+                        android:maxLines="25"
+                        android:minLines="1"
+                        android:scrollbars="vertical"
+                        android:textCursorDrawable="@null"
+                        android:textSize="45sp" />
+                    <TextView
+                        android:id="@+id/error_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center"
+                        android:text=" "
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="30sp" />
+                </LinearLayout>
+
+            </ScrollView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/enterRecipeToOpeningButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/red_dark"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/return_to_enter_link"
+                android:textSize="40sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight=".1" />
+
+
+            <Button
+                android:id="@+id/invisibleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/red_dark"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/recipe_to_ingredients"
+                android:textSize="40sp"
+                android:visibility="invisible" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight=".1" />
+
+
+            <Button
+                android:id="@+id/enterRecipeLinkButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/red_dark"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/recipe_to_ingredients"
+                android:textSize="40sp" />
+        </LinearLayout>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

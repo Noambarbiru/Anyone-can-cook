@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/AppOpening">
+
+    <fragment
+        android:id="@+id/AppOpening"
+        android:name="com.example.anyonecancook.AppOpening"
+        android:label="@string/app_opening_label"
+        tools:layout="@layout/app_opening">
+
+        <action
+            android:id="@+id/action_AppOpening_to_EnterRecipeLink"
+            app:destination="@id/EnterRecipeLink" />
+    </fragment>
+    <fragment
+        android:id="@+id/EnterRecipeLink"
+        android:name="com.example.anyonecancook.EnterRecipeLink"
+        android:label="@string/enter_recipe_link_label"
+        tools:layout="@layout/enter_recipe_link">
+
+        <action
+            android:id="@+id/action_EnterRecipeLink_to_ShowRecipe"
+            app:destination="@id/ShowRecipe" />
+        <action
+            android:id="@+id/action_EnterRecipeLink_to_AppOpening"
+            app:destination="@id/AppOpening" />
+    </fragment>
+    <fragment
+        android:id="@+id/ShowRecipe"
+        android:name="com.example.anyonecancook.ShowRecipe"
+        android:label="@string/show_recipe_label"
+        tools:layout="@layout/show_recipe">
+
+        <action
+            android:id="@+id/action_ShowRecipe_to_ShowCheckList"
+            app:destination="@id/ShowCheckList" />
+        <action
+            android:id="@+id/action_ShowRecipe_to_EnterRecipeLink"
+            app:destination="@id/EnterRecipeLink" />
+    </fragment>
+    <fragment
+        android:id="@+id/ShowCheckList"
+        android:name="com.example.anyonecancook.ShowCheckList"
+        android:label="@string/show_check_list_label"
+        tools:layout="@layout/show_check_list">
+
+        <action
+            android:id="@+id/action_ShowCheckList_to_ShowRecipe"
+            app:destination="@id/ShowRecipe" />
+        <action
+            android:id="@+id/action_ShowCheckList_to_MakingRecipePhase"
+            app:destination="@id/MakingRecipePhase" />
+    </fragment>
+    <fragment
+        android:id="@+id/MakingRecipePhase"
+        android:name="com.example.anyonecancook.MakingRecipePhase"
+        android:label="@string/making_recipe_phase_label"
+        tools:layout="@layout/making_recipe_phase">
+
+        <action
+            android:id="@+id/action_MakingRecipePhase_to_ShowCheckList"
+            app:destination="@id/ShowCheckList" />
+        <action
+            android:id="@+id/action_MakingRecipePhase_to_AppOpening"
+            app:destination="@id/AppOpening" />
+    </fragment>
+</navigation>

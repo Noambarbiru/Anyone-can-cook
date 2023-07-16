@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Anyone Can Cook</string>
+    <string name="action_settings">Questions look up table</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="app_opening_label">Anyone Can Cook</string>
+    <string name="enter_recipe_link_label">Enter Recipe Link</string>
+    <string name="show_recipe_label">Display Recipe</string>
+    <string name="show_check_list_label">Display Ingredients</string>
+    <string name="making_recipe_phase_label">Display Ingredients</string>
+
+    <string name="hint_link">Enter recipe name/ link from allrecipes.com (or share from browser).\nThen click the arrow to proceed </string>
+    <string name="next">START</string>
+    <string name="return_to_enter_link">\u140A</string>
+    <string name="load_recipe">\u1405</string>
+    <string name="recipe_to_ingredients">\u1405</string>
+    <string name="making_recipe_to_ingredients_checklist">Back To\nChecklist</string>
+    <string name="ingredients_to_recipe">\u140A</string>
+    <string name="to_app_opening">Finish</string>
+    <string name="check_list_to_making_phase">\u1405</string>
+    <string name="previous_instruction">\u1438</string>
+    <string name="next_instruction">\u1433</string>
+    <string name="repeat_instruction">\u21BB</string>
+    <string name="check_list_title">Ingredients Checklist</string>
+    <string name="enter_recipe_title">Recipe Selection</string>
+    <string name="enter_app">Anyone\nCan\nCook</string>
+    <string name="error_message_wrong_website">The Link is not for a recipe in allrecipes.com</string>
+    <string name="keywords_vision_impiared">\u25E6 \'\'next/previous page\'\' - to toggle between pages of the app</string>
+    <string name="keywords_vision_impiared_checkList">\u25E6 \'\'stop/continue checking\'\' - to stop or continue checking the checklist by voice\n\u25E6 \'\'next/previous page\'\' - to toggle between pages of the app</string>
+    <string name="keywords_vision_impiared_show_recipe">\u25E6 \'\'read the ingredients/instructions\'\'\n\u25E6 \'\'next/previous page\'\' - to toggle between pages of the app</string>
+    <string name="keywords_vision_impiared_show_recipe_change_recipe">\u25E6 \'\'read the ingredients/instructions\'\' - to be read by the bot for you\n\u25E6 \'\'change recipe\'\' - to reload a recipe\n\u25E6 \'\'next/previous page\'\' - to toggle between pages of the app</string>
+    <string name="keywords_vision_impiared_making_recipe">\u25E6 \'\'next/previous/repeat instruction\'\' - to toggle between recipe instructions\n\u25E6 \'\'I have a question\'\' followed immediately by your question - for general questions about the recipe\n (Note that a pause between the phrase and the question itself may be identified as the end of your input and then the question itself will not be caught in the input)\n\u25E6 \'\'finish\'\' - to finish the cooking process\n\u25E6 \'\'next/previous page\'\' - to toggle between pages of the app</string>
+    <string name="keywords_not_vision_impiared">\u25E6 \'\'next/previous/repeat instruction\'\' - to toggle between recipe instructions\n\u25E6 \'\'I have a question\'\' followed immediately by your question - for general questions about the recipe\n (Note that a pause between the phrase and the question itself may be identified as the end of your input and then the question itself will not be caught in the input)</string>
+
+</resources>

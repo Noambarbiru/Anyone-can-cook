@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowRecipe">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/change_recipe_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="@color/red_dark"
+            android:backgroundTintMode="src_over"
+            android:clickable="true"
+            android:src="@drawable/ic_autorenew"
+            app:borderWidth="0dp"
+            app:fabCustomSize="75dp"
+            app:maxImageSize="60dp"
+            app:tint="@android:color/white"
+
+            />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Remy_Menu_roundCardView"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_gravity="top|left"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="48dp"
+            >
+
+            <ImageButton
+                android:id="@+id/Remy_Menu_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/remy" />
+        </androidx.cardview.widget.CardView>
+        <ImageView
+            android:id="@+id/animation"
+            android:layout_width="200dp"
+            android:layout_height="85dp"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_margin="10dp"
+            android:src="@drawable/listening_animation" />
+
+
+        <LinearLayout
+            android:id="@+id/show_recipe_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="0dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/showRecipeTextviewRecipeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="105dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="top|center_horizontal"
+                android:text="recipe title"
+                android:textColor="@color/black"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <ListView
+                android:id="@+id/recipe_list"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight=".7"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/black"
+                android:textSize="50sp" />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/returnToEnterLinkButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/red_dark"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/return_to_enter_link"
+                    android:textSize="40sp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight=".1" />
+
+
+                <Button
+                    android:id="@+id/goToCheckListButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/red_dark"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/recipe_to_ingredients"
+                    android:textSize="40sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
